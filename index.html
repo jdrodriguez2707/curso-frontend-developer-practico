@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>YardSale: Online store with cool things</title>
+  </head>
+  <body>
+    <header class="navbar__container">
+      <nav class="navbar">
+        <!-- Only shown on mobile screens -->
+        <img
+          id="bars-icon"
+          class="navbar__icon"
+          src="./assets/icons/icon_menu.svg"
+          alt="Icon menu"
+        />
+        <div id="menu-mobile" class="menu-mobile inactive">
+          <img 
+            id="menu-mobile-close-icon" 
+            class="menu-mobile__close-icon" 
+            src="./assets/icons/icon_close.png" 
+            alt="menu mobile close icon"
+          >
+          <div>
+            <ul class="menu-mobile__categories">
+              <li>
+                <span class="menu-mobile__categories-title">categories</span>
+                <ul class="menu-mobile__category-list">
+                  <li class="menu-mobile__category-item">
+                    <a class="menu-mobile__category-link" href="#">All</a>
+                  </li>
+                  <li class="menu-mobile__category-item">
+                    <a class="menu-mobile__category-link" href="#">Clothes</a>
+                  </li>
+                  <li class="menu-mobile__category-item">
+                    <a class="menu-mobile__category-link" href="#"
+                      >Electronics</a
+                    >
+                  </li>
+                  <li class="menu-mobile__category-item">
+                    <a class="menu-mobile__category-link" href="#">Furniture</a>
+                  </li>
+                  <li class="menu-mobile__category-item">
+                    <a class="menu-mobile__category-link" href="#">Toys</a>
+                  </li>
+                  <li class="menu-mobile__category-item">
+                    <a class="menu-mobile__category-link" href="#">Others</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="menu-mobile__my-info-list">
+              <li class="menu-mobile__my-info-item">
+                <a class="menu-mobile__my-info-link" href="#">My orders</a>
+              </li>
+              <li class="menu-mobile__my-info-item">
+                <a class="menu-mobile__my-info-link" href="#">My account</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-mobile__my-info-container">
+            <p class="menu-mobile__email">myemail@gmail.com</p>
+            <a class="menu-mobile__sign-out" href="#">Sign out</a>
+          </div>
+        </div>
+        <div class="navbar__left">
+          <figure class="navbar__logo-container">
+            <img
+              id="yard-sale-logo"
+              class="navbar__logo"
+              src="./assets/logos/logo_yard_sale.svg"
+              alt="Yard Sale"
+            />
+          </figure>
+          <!-- Only shown on laptop or desktop screens -->
+          <ul class="navbar__categories">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">All</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Clothes</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Electronics</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Furniture</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Toys</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Others</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__right">
+          <!-- Only shown on laptop or desktop screens -->
+          <div id="navbar-email" class="navbar__email-container">
+            <p class="navbar__email">youremail@gmail.com</p>
+            <figure class="navbar__icon-expand-container">
+              <img
+                id="navbar-icon-expand"
+                class="navbar__icon-expand"
+                src="./assets/icons/Path.svg"
+                alt="Expand more"
+              />
+            </figure>
+          </div>
+          <figure
+            id="shopping-cart-icon"
+            class="navbar__icon-sp-cart-container"
+          >
+            <img
+              class="navbar__icon-shopping-cart"
+              src="./assets/icons/icon_shopping_cart_notification.svg"
+              alt="icon menu"
+            />
+            <p id="shopping-cart-number-of-products" class="navbar__product-number">0</p>
+          </figure>
+          <div id="menu-desktop" class="menu-desktop inactive">
+            <ul class="menu-desktop__menu-options">
+              <li class="menu-desktop__menu-option">
+                <a class="menu-desktop__link" href="#">My orders</a>
+              </li>
+              <li class="menu-desktop__menu-option">
+                <a class="menu-desktop__link" href="#">My account</a>
+              </li>
+              <li
+                class="menu-desktop__menu-option menu-desktop__menu-option--sign-out"
+              >
+                <a
+                  class="menu-desktop__link menu-desktop__link--sign-out"
+                  href="#"
+                >
+                  Sign out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <aside id="shopping-cart-aside" class="aside-container inactive">
+      <img 
+        id="sp-cart-aside-arrow-left-icon-mobile" 
+        class="shopping-cart__arrow-left-icon-mobile" 
+        src="./assets/icons/arrow-left.svg" 
+        alt="Arrow left icon mobile">
+      <div class="shopping-cart">
+        <div class="shopping-cart__title-arrow-container">
+          <figure id="sp-cart-arrow-left-icon" class="shopping-cart__arrow-left-container">
+            <img
+              class="shopping-cart__arrow-left"
+              src="./assets/icons/arrow-left.svg"
+              alt="Arrow left"
+            />
+          </figure>
+          <h2 class="shopping-cart__title">Shopping cart</h2>
+        </div>
+        <div id="shopping-cart-product-container" class="shopping-cart__product-container">
+          <div id="shopping-cart-empty-container" class="shopping-cart__sp-empty-icon-container">
+            <img 
+              class="shopping-cart__shopping-cart-empty-icon" 
+              src="./assets/icons/carbon--shopping-cart-error.svg" 
+              alt="Shopping cart empty" 
+            />
+            <p class="shopping-cart__sp-empty-text">You haven't added any products yet.</p>
+          </div>
+        </div>
+        <div class="shopping-cart__total-value-container">
+          <div id="shopping-cart-total-to-pay" class="shopping-cart__total-to-pay-container inactive">
+            <p class="shopping-cart__total-text">Total</p>
+            <p id="shopping-cart-total-value" class="shopping-cart__total-value"></p>
+          </div>
+          <button id="shopping-cart-checkout-button" class="shopping-cart__button-checkout inactive">Checkout</button>
+        </div>
+      </div>
+    </aside>
+    <aside id="product-details-aside" class="product-container inactive">
+      <figure class="product-container__img-container">
+        <!-- fake src to avoid problems with accessibility or SEO -->
+        <img
+          src="./assets/logos/logo_yard_sale.svg" 
+          id="product-details-image"
+          class="product-container__product-img"
+        />
+        <div
+          id="product-details-close-icon"
+          class="product-container__close-icon-container"
+        >
+          <img
+            class="product-container__close-icon"
+            src="./assets/icons/icon_close.png"
+            alt="Close icon"
+          />
+        </div>
+        <div class="product-container__sliding-circles">
+          <div
+            class="product-container__circle product-container__circle--selected"
+          ></div>
+          <div class="product-container__circle"></div>
+          <div class="product-container__circle"></div>
+        </div>
+      </figure>
+      <div class="product-container__product-details">
+        <div class="product-container__product-info">
+          <p id="product-details-price" class="product-container__product-price"></p>
+          <p id="product-details-name" class="product-container__product-name"></p>
+          <p id="product-details-description" class="product-container__product-description"></p>
+        </div>
+        <button id="product-details-add-to-cart-button" class="product-container__add-to-cart-button">
+          <figure class="product-container__sp-cart-container">
+            <img
+              class="product-container__shopping-cart-icon"
+              src="./assets/icons/icon_shopping_cart.svg"
+              alt="shopping cart icon"
+            />
+          </figure>
+          Add to cart
+        </button>
+      </div>
+    </aside>
+    <main class="home-sign-in">
+      <div id="products-container" class="products-container">
+        <!-- <div class="products-container__product-card">
+          <figure class="products-container__product-img-container">
+            <img
+              class="products-container__product-image"
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="A bike"
+            />
+          </figure>
+          <div class="products-container__product-info">
+            <div>
+              <p class="products-container__product-price">$120,00</p>
+              <p class="products-container__product-name">Bike</p>
+            </div>
+            <figure class="products-container__icon-container">
+              <img
+                class="products-container__add-to-cart-icon"
+                src="./assets/icons/bt_add_to_cart.svg"
+                alt="Add to cart"
+              />
+            </figure>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
